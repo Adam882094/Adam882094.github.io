@@ -6,6 +6,6 @@ async function main(text, hashType){
         case 'SHA256': hashResult = "TODO: Implement SHA256"; break;
         default: hashResult = "Error, invalid Algorithm Selection" //Returns error message if hashType invalid
     }
-    //console.log(hashResult);
+    console.log(hashResult);
     document.getElementById("hashOutput").innerHTML = hashResult;
 }
