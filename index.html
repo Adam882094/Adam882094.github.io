@@ -1,9 +1,26 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hash Generator</title>
+    <script type = "text/javascript" src = "js/StringToHash.js"></script>
+</head>
 <body>
-    <h1>Hello World</h1>
-    <h2>Goodbye World</h2>
-</body>
+<h1>Hash Generator</h1>
+<p>type a string, select a hash generator, and click Generate Hash</p>
+<label for="hashType">Choose a hashing algorithm:</label>
+<select name="hashType" id="hashType">
+    <option value="SHA1">SHA-1</option>
+</select>
+<label>
+    <input type="text" id = "StringInput">
+</label>
 
+<input type="button" onclick = "main(document.getElementById('StringInput').value, document.getElementById('hashType').value)" value = "Generate Hash" >
+<label>
+    <h2>Hash Output:</h2>
+    <p id="hashOutput"></p>
+</label>
+
+</body>
 </html>
