@@ -31,7 +31,7 @@
             <div class="form-group">
             
                 <div class="row justify-content-md-center">
-                    <label for="hashType">Choose a hashing algorithm: </label>
+                    <label for="hashType">Choose a hashing algorithm:</label>
                     <select name="hashType" id="hashType" class="form-select form-select-lg mb-3"
                         aria-label="Default select example">
                         <option value="SHA1">SHA-1</option>
@@ -49,8 +49,10 @@
                 </div>
             </div>
             
-            <div class="form-group text-center">
-                <input type="text" id="StringInput" class="form-control bg-light input text-center" placeholder="Enter string here!" required>
+            <div class="form-group justify-content-center">
+                <div class="row justify-content-md-center">
+                    <input type="text" id="StringInput" class="form-control bg-light input text-center" placeholder="Enter string here!" required>
+                </div>
             </div>
             <div>
                 <input type="button"
@@ -62,20 +64,18 @@
                     <h2 class="mb-3 mt-3">Hash Output:</h2>
                 </label> 
                 <div class="container text-center">
-                    <center>
-                        <div class="loader mb-3 loadingStop"></div>
-                        <span class="mt-3 loadingStop">Hashing your string... Please wait.</span>
-                    </center>
-                
+                    <div class="row justify-content-center">
+                        <div class="loader mb-3 loadingStop"></div>     
+                    </div>
+                    <div class="row justify-content-center">
+                        <span class="mt-3 loadingStop">Hashing your string... Please wait.</span>   
+                    </div>
+                                  
                     <p id="hashOutput" name="hashOutput"></p>
+
                 </div>
             </div>
         </form>
-    
-            
-
-
-
 
     </body>
     <footer>
